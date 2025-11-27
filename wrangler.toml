@@ -1,0 +1,5 @@
+name = "spritecutter"                 # or whatever you want to call it
+compatibility_date = "2025-11-27"
+
+[assets]
+directory = "./dist"
