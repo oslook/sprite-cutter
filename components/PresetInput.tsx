@@ -16,7 +16,7 @@ const PresetInput: React.FC<PresetInputProps> = ({
   onChange, 
   min = 1, 
   max = 50,
-  presets = [2, 3, 4, 5, 6, 7, 8]
+  presets = [2, 3, 4, 6, 8]
 }) => {
   // Local state to handle the input text.
   // This allows the user to have an empty input string (while typing)
