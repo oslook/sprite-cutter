@@ -1,4 +1,5 @@
 # SpriteCutter - Intelligent Image Slicing Tool
+![example](https://github.com/user-attachments/assets/fef0f72d-ed22-420f-8a8f-2988ed2a7e27)
 
 SpriteCutter is a powerful, browser-based tool designed to split sprite sheets, sticker packs, and multi-action images into individual files. With a focus on user experience, it offers real-time previews, smart trimming capabilities, and instant batch downloads.
 
