@@ -48,4 +48,10 @@ export interface Translations {
   step3: string;
   step4: string;
   gotIt: string;
+  customGrid: string;
+  customGridDesc: string;
+  smartTrimming: string;
+  smartTrimmingDesc: string;
+  instantZip: string;
+  instantZipDesc: string;
 }

@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Download, RefreshCw, X, Grid, Layers, Settings2, Image as ImageIcon, Scissors, HelpCircle } from 'lucide-react';
+import { Download, RefreshCw, X, Grid, Layers, Settings2, Image as ImageIcon, Scissors, HelpCircle, Github } from 'lucide-react';
 import { TEXTS } from './constants';
 import { Language, SlicedImage, SliceConfig } from './types';
 import { sliceImage, downloadAsZip } from './utils/imageProcessing';
@@ -165,22 +165,22 @@ const App: React.FC = () => {
                    <div className="bg-blue-50 w-12 h-12 rounded-xl flex items-center justify-center mx-auto text-blue-600 mb-4">
                       <Grid />
                    </div>
-                   <h3 className="font-semibold text-gray-900">Custom Grid</h3>
-                   <p className="text-sm text-gray-500">Slice any sprite sheet by defining custom rows and columns.</p>
+                   <h3 className="font-semibold text-gray-900">{texts.customGrid}</h3>
+                   <p className="text-sm text-gray-500">{texts.customGridDesc}</p>
                 </div>
                 <div className="space-y-2">
                    <div className="bg-indigo-50 w-12 h-12 rounded-xl flex items-center justify-center mx-auto text-indigo-600 mb-4">
                       <Scissors />
                    </div>
-                   <h3 className="font-semibold text-gray-900">Smart Trimming</h3>
-                   <p className="text-sm text-gray-500">Remove unwanted padding or spacing between sprites automatically.</p>
+                   <h3 className="font-semibold text-gray-900">{texts.smartTrimming}</h3>
+                   <p className="text-sm text-gray-500">{texts.smartTrimmingDesc}</p>
                 </div>
                 <div className="space-y-2">
                    <div className="bg-green-50 w-12 h-12 rounded-xl flex items-center justify-center mx-auto text-green-600 mb-4">
                       <Download />
                    </div>
-                   <h3 className="font-semibold text-gray-900">Instant ZIP</h3>
-                   <p className="text-sm text-gray-500">Download all your sliced assets in a single, organized ZIP file.</p>
+                   <h3 className="font-semibold text-gray-900">{texts.instantZip}</h3>
+                   <p className="text-sm text-gray-500">{texts.instantZipDesc}</p>
                 </div>
              </div>
           </div>
@@ -318,13 +318,13 @@ const App: React.FC = () => {
                         label={texts.cols}
                         value={config.cols}
                         onChange={(val) => setConfig({ ...config, cols: val })}
-                        presets={[2, 3, 4, 5, 6, 8]}
+                        presets={[2, 3, 4, 6]}
                       />
                       <PresetInput 
                         label={texts.rows}
                         value={config.rows}
                         onChange={(val) => setConfig({ ...config, rows: val })}
-                        presets={[2, 3, 4, 5, 6, 8]}
+                        presets={[2, 3, 4, 5]}
                       />
                     </div>
                     
@@ -414,7 +414,7 @@ const App: React.FC = () => {
       {/* Footer */}
       {!imageSrc && (
           <footer className="py-8 text-center text-gray-400 text-sm">
-            <p>&copy; {new Date().getFullYear()} SpriteCutter. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} SpriteCutter. All rights reserved. | <a href="https://github.com/oslook/sprite-cutter" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600 transition-colors"><Github size={16} className="inline mr-1" />GitHub</a></p>
           </footer>
       )}
     </div>

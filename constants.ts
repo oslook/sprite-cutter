@@ -32,6 +32,12 @@ export const TEXTS: Record<'en' | 'zh', Translations> = {
     step3: "Adjust trim settings to remove grid lines",
     step4: "Preview and download ZIP",
     gotIt: "Got it, let's start!",
+    customGrid: "Custom Grid",
+    customGridDesc: "Slice any sprite sheet by defining custom rows and columns.",
+    smartTrimming: "Smart Trimming",
+    smartTrimmingDesc: "Remove unwanted padding or spacing between sprites automatically.",
+    instantZip: "Instant ZIP",
+    instantZipDesc: "Download all your sliced assets in a single, organized ZIP file.",
   },
   zh: {
     title: "图片切分工具",
@@ -63,5 +69,11 @@ export const TEXTS: Record<'en' | 'zh', Translations> = {
     step3: "调整边缘裁切以去除不需要的分割线",
     step4: "实时预览并一键下载压缩包",
     gotIt: "明白了，开始使用！",
+    customGrid: "自定义网格",
+    customGridDesc: "通过定义自定义行和列来切分任何精灵表。",
+    smartTrimming: "智能裁切",
+    smartTrimmingDesc: "自动移除精灵之间的不需要的填充或间距。",
+    instantZip: "即时ZIP",
+    instantZipDesc: "将所有切分的资产下载到一个有组织的ZIP文件中。",
   }
 };
