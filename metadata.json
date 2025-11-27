@@ -1,0 +1,5 @@
+{
+  "name": "SpriteCutter",
+  "description": "A powerful and easy-to-use tool for slicing sprite sheets and images into individual frames. Supports custom grids, multiple formats, and one-click ZIP download.",
+  "requestFramePermissions": []
+}
