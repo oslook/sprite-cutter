@@ -10,7 +10,7 @@ import PresetInput from './components/PresetInput';
 import HelpModal from './components/HelpModal';
 
 const App: React.FC = () => {
-  const [lang, setLang] = useState<Language>('zh'); // Default to Chinese as per likely preference or keep 'en'
+  const [lang, setLang] = useState<Language>('en'); // Default to Chinese as per likely preference or keep 'en'
   const [imageFile, setImageFile] = useState<File | null>(null);
   const [imageSrc, setImageSrc] = useState<string | null>(null);
   const [imageSize, setImageSize] = useState<{ width: number; height: number } | null>(null);
